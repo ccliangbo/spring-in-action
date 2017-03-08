@@ -3,11 +3,13 @@
 <html>
 	<head>
 		<title>Spittr</title>
-		<link rel="stylesheet"
-			type="text/css"
-			href="<c:url value="/resources/style.css" />" />
 	</head>
 	<body>
-		<h1>welcome</h1>
+		<h1>Recent Spittles 20</h1>
+		<c:forEach items="${spittleList}" var="spittle">
+			<li>
+				<c:out value="${spittle.message}"/>
+			</li>
+		</c:forEach>
 	</body>
 </html>
