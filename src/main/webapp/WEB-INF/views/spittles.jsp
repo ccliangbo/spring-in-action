@@ -11,5 +11,6 @@
 				<c:out value="${spittle.message}"/>
 			</li>
 		</c:forEach>
+		<c:out value="${ spittle.message }"/>
 	</body>
 </html>

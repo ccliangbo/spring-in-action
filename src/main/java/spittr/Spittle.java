@@ -22,7 +22,7 @@ public class Spittle {
 	}
 
 	public Spittle(String message, Date time) {
-		this(message,time,null,null);
+		this(message, time, null, null);
 	}
 
 	public Long getId() {
