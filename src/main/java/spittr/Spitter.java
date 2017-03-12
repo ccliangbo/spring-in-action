@@ -19,6 +19,17 @@ public class Spitter {
 	@NotNull
 	@Size(min = 2, max = 30)
 	private String lastName;
+	@NotNull
+	@Size(min = 2, max = 30)
+	private String email;
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
 
 	public Spitter() {
 	}
