@@ -15,6 +15,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
-		http.formLogin().and().authorizeRequests().regexMatchers("/spittles").authenticated().anyRequest().permitAll();
+		http.formLogin().loginPage("/login").permitAll().and().authorizeRequests().regexMatchers("/spittles")
+				.authenticated().anyRequest().permitAll();
 	}
 }
